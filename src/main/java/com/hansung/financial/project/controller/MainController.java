@@ -8,4 +8,8 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping("/test")
+    public String test() {
+        return "index";
+    }
 }
