@@ -1,20 +1,24 @@
 package com.hansung.financial.project.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
+@Controller
 public class MainController {
-    @RequestMapping("/")
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String dashboard() {
         return "index";
     }
 
-    @RequestMapping("/test")
+    @GetMapping("/test")
     public String test() {
         return "index";
     }
 
-    @RequestMapping("/test2")
-    public String test2() {
-        return "index";
+    @GetMapping("/login")
+    public String login() {
+        return "login";
     }
 }
