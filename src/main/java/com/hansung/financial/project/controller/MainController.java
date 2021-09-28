@@ -35,6 +35,9 @@ public class MainController {
     @GetMapping("/tables")
     public String tables() { return "tables"; }
 
+    @GetMapping("/blank")
+    public String blank() { return "blank"; }
+
     @GetMapping("/utilities-animation")
     public String utilities_animation() { return "utilities-animation"; }
 
