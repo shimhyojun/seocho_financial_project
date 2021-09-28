@@ -1,9 +1,11 @@
 package com.hansung.financial.project.controller;
 
+import jdk.internal.module.IllegalAccessLogger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
@@ -21,7 +23,12 @@ public class MainController {
     public String cards() { return "cards"; }
 
     @GetMapping("/charts")
-    public String charts() { return "charts"; }
+    public ModelAndView charts() {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("charts");
+
+        return mav;
+    }
 
     @GetMapping("/forgot-password")
     public String forgot_password() { return "forgot-password"; }
