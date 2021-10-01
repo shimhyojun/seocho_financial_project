@@ -8,4 +8,6 @@ import java.util.List;
 @Mapper
 public interface MembersMapper {
     List<Member> getMembers();
+
+    Member getMember(int id);
 }

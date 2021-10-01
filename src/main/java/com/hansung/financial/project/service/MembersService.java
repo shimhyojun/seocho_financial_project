@@ -17,4 +17,8 @@ public class MembersService {
     public List<Member> getMembers() {
         return mapper.getMembers();
     }
+
+    public Member getMember(int id) {
+        return mapper.getMember(id);
+    }
 }
