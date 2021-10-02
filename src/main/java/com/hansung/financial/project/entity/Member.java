@@ -15,6 +15,10 @@ public class Member {
     private String email;
     private String created_at;
 
+    public Member() {
+    	
+    }
+    
     public Member(int id, String name, String pw, int pNumber, String email, String created_at) {
         this.id = id;
         this.name = name;
