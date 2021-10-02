@@ -17,7 +17,7 @@ public class MemberApiController {
         this.membersService = membersService;
     }
 
-    @GetMapping("/members")
+    @GetMapping("/memberss")
     public List<Member> getMembers() {
         return membersService.getMembers();
     }
