@@ -59,7 +59,7 @@
                                             </div>
                                         </div>
                                         <a href="/" class="btn btn-primary btn-user btn-block">
-                                            Login
+                                            Login...
                                         </a>
                                         <hr>
                                         <a href="/" class="btn btn-google btn-user btn-block">
