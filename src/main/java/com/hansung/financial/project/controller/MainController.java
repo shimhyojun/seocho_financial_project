@@ -101,6 +101,9 @@ public class MainController {
     
     @GetMapping("/tests")
     public String tests() { return "tests"; }
+    
+    @GetMapping("/notice")
+    public String notice() { return "notice"; }
 
     @GetMapping("/utilities-animation")
     public String utilities_animation() { return "utilities-animation"; }
