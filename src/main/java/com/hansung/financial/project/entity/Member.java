@@ -10,16 +10,16 @@ import org.apache.ibatis.type.Alias;
 public class Member {
     private int id;
     private String name;
-    private String pw;
-    private int pNumber;
+    private String pwd;
+    private String phone;
     private String email;
     private String created_at;
 
-    public Member(int id, String name, String pw, int pNumber, String email, String created_at) {
+    public Member(int id, String name, String pwd, String phone, String email, String created_at) {
         this.id = id;
         this.name = name;
-        this.pw = pw;
-        this.pNumber = pNumber;
+        this.pwd = pwd;
+        this.phone = phone;
         this.email = email;
         this.created_at = created_at;
     }

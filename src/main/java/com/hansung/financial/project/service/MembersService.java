@@ -17,4 +17,10 @@ public class MembersService {
     public List<Member> getMembers() {
         return mapper.getMembers();
     }
+
+    public Member addMember(Member member) {
+        int id = mapper.addMember(member);
+        member.setId(id);
+        return member;
+    }
 }
