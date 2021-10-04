@@ -101,9 +101,7 @@ function register() {
     let phone = $("#exampleInputPhone").val();
     let email = $("#exampleInputEmail").val();
     let pwd = $("#exampleInputPassword").val();
-    console.log(name + "," + email);
     let memberObj = {name:name, phone:phone, email:email, pwd:pwd};
-    console.log($("#registerForm"));
     $.ajax({
         type: "POST",
         url: "/members",

@@ -19,4 +19,9 @@
         insert into members(name, pwd, phone, email)
         values (#{name}, #{pwd}, #{phone}, #{email})
     </insert>
+
+    <delete id="deleteMember" parameterType="int" >
+        delete from members
+        where id=#{id}
+    </delete>
 </mapper>
