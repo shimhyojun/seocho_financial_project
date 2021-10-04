@@ -10,4 +10,6 @@ public interface MembersMapper {
     List<Member> getMembers();
 
     int addMember(Member member);
+
+    Member getMember(int id);
 }

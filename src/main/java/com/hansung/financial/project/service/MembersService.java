@@ -23,4 +23,8 @@ public class MembersService {
         member.setId(id);
         return member;
     }
+
+    public Member getMember(int id) {
+        return mapper.getMember(id);
+    }
 }
