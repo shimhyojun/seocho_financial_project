@@ -18,6 +18,12 @@ public class MembersService {
         return mapper.getMembers();
     }
 
+    public Member addMember(Member member) {
+        int id = mapper.addMember(member);
+        member.setId(id);
+        return member;
+    }
+
     public Member getMember(int id) {
         return mapper.getMember(id);
     }
