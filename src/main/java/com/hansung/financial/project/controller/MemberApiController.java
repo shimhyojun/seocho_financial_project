@@ -4,6 +4,7 @@ import com.hansung.financial.project.entity.Member;
 import com.hansung.financial.project.service.MembersService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,10 +25,20 @@ public class MemberApiController {
         return membersService.getMembers();
     }
 
+    @GetMapping("/members/{id}")
+    public Member getMembers(@PathVariable(value = "id") int id) {
+        return membersService.getMember(id);
+    }
+
     @PostMapping("/members")
     public ResponseEntity<Member> addMember(@RequestBody Member member) {
         Member insertedMember = membersService.addMember(member);
         return ResponseEntity.status(HttpStatus.CREATED).body(insertedMember);
+    }
+
+    @DeleteMapping("/members/{id}")
+    public void removeMember(@PathVariable(value = "id") int id) {
+        membersService.deleteMember(id);
     }
 
     @GetMapping("/members/{id}")
