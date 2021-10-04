@@ -116,6 +116,7 @@
                         <h6 class="collapse-header">Other Pages:</h6>
                         <!--a class="collapse-item" href="404.html">404 Page</a-->
                         <a class="collapse-item" href="/blank">Blank Page</a>
+             			<a class="collpase-item active" href="/tests">Customized Test</a>
                     </div>
                 </div>
             </li>

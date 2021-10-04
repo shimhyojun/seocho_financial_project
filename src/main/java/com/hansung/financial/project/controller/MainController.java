@@ -98,6 +98,9 @@ public class MainController {
 
     @GetMapping("/blank")
     public String blank() { return "blank"; }
+    
+    @GetMapping("/tests")
+    public String tests() { return "tests"; }
 
     @GetMapping("/utilities-animation")
     public String utilities_animation() { return "utilities-animation"; }
