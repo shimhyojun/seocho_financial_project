@@ -43,9 +43,9 @@ public class MemberApiController {
     }
 
     @PutMapping("/members/{id}")
-    public Member updateMembers(@PathVariable(value = "id") int id, @RequestBody Member member) {
-
-        return membersService.getMember(id);
+    public int updateMembers(@PathVariable(value = "id") int id, @RequestBody Member member) {
+        member.setId(id);
+        return membersService.updateMember(member);
     }
 
 }
