@@ -1,16 +1,71 @@
 package com.hansung.financial.project.controller;
 
+import java.io.PrintWriter;
+import java.security.PrivateKey;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.hansung.financial.project.entity.Member;
+
+@SuppressWarnings("deprecation")
 @Controller
 public class MainController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String dashboard() {
         return "index";
+    }
+    
+    @RequestMapping(value = "/index.do", method = RequestMethod.GET)
+    public String main() {
+        return "index";
+    }
+    
+    @RequestMapping(value = "loginResult.do")
+    	public void loginResult(HttpServletRequest  request, HttpServletResponse response, HttpSession session)
+    			throws Exception {
+    		PrintWriter out = null;
+    		
+    		response.setCharacterEncoding("UTF-8");
+
+    		String quotZero = request.getParameter("param");
+
+    		quotZero = quotZero.replaceAll("&quot;", "\"");
+    		
+    	  
+
+			JsonParser parser = new JsonParser();
+    	    JsonElement element = parser.parse(quotZero);
+
+    	    String id = element.getAsJsonObject().get("loginid").getAsString();
+    	    String pwd = element.getAsJsonObject().get("passwd").getAsString();
+    			
+    	    System.out.println("id  : " + id);
+    	    System.out.println("pwd  : " + pwd);
+
+    		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    			
+    			long now = System.currentTimeMillis();
+    			String nowStr = sdf.format(now);
+    			
+    			Member members = new Member();
+
+    		
+    	
     }
 
     @GetMapping("/buttons")
@@ -43,6 +98,12 @@ public class MainController {
 
     @GetMapping("/blank")
     public String blank() { return "blank"; }
+    
+    @GetMapping("/tests")
+    public String tests() { return "tests"; }
+    
+    @GetMapping("/notice")
+    public String notice() { return "notice"; }
 
     @GetMapping("/utilities-animation")
     public String utilities_animation() { return "utilities-animation"; }

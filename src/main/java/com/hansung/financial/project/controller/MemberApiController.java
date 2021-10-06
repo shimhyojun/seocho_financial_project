@@ -5,6 +5,11 @@ import com.hansung.financial.project.service.MembersService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
 
 import java.util.List;
 
@@ -16,7 +21,7 @@ public class MemberApiController {
         this.membersService = membersService;
     }
 
-    @GetMapping("/members")
+    @GetMapping("/memberss")
     public List<Member> getMembers() {
         return membersService.getMembers();
     }
@@ -36,4 +41,10 @@ public class MemberApiController {
     public void removeMember(@PathVariable(value = "id") int id) {
         membersService.deleteMember(id);
     }
+
+    @GetMapping("/members/{id}")
+    public Member getMembers(@PathVariable(value = "id") int id) {
+        return membersService.getMember(id);
+    }
+
 }
