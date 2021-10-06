@@ -19,7 +19,45 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <script src="vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript">
+	function login_execute() {
+        var userIdDetail = $("#loginid").val();
+        var userPwDetail = $("#loginpwd").val();
+        
+ //       if(userIdDetail.length() < 1) {
+ //           alert("id / pwd insert"); 
+  //      }
+//        else {
+            var jsonObj = {};
+            
+            jsonObj.loginid = userIdDetail;
+            jsonObj.passwd = userPwDetail;
+            
+            console.log("userIdDetail : " + userIdDetail);
+            $.ajax({
+                url : "loginResult.do", 
+                //dataType : "json",
+                data:{"param": JSON.stringify(jsonObj)},
+                //data : encodeURI(JSON.stringify(data)),
+                contentType : "application/json",
+                cache: false,
+                success : function (data22) {
+                    var loginData = JSON.parse(data22)
+                    
+                    if(loginData.loginYn === 'Y'){
+                            window.location.href = "index.do"; 
+                    }
+                    else
+                        alert("login error");
+                },
+                error : function () {
+                    alert("login error");
+                }
+            });
+    //    }
+    }
+	</script>
 </head>
 
 <body class="bg-gradient-primary">
@@ -44,12 +82,12 @@
                                     <form class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                id="loginid" aria-describedby="emailHelp"
                                                 placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="loginpwd" placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -58,16 +96,11 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="/" class="btn btn-primary btn-user btn-block">
+                                        <a onclick='login_execute()' class="btn btn-primary btn-user btn-block">
                                             Login...
                                         </a>
                                         <hr>
-                                        <a href="/" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
-                                        </a>
-                                        <a href="/" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                        </a>
+
                                     </form>
                                     <hr>
                                     <div class="text-center">
