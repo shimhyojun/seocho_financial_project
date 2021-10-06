@@ -42,9 +42,4 @@ public class MemberApiController {
         membersService.deleteMember(id);
     }
 
-    @GetMapping("/members/{id}")
-    public Member getMembers(@PathVariable(value = "id") int id) {
-        return membersService.getMember(id);
-    }
-
 }
