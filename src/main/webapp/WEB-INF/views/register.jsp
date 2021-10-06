@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" id="registerForm">
+                            <form class="user" id="registerForm" method="post">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control form-control-user" id="exampleInputName"
                                            placeholder="Full Name">
@@ -59,9 +59,9 @@
                                             id="exampleRepeatPassword" placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary btn-user btn-block" onclick="register()">
+                                <a class="btn btn-primary btn-user btn-block" onclick="register()">
                                     Register Account
-                                </button>
+                                </a>
                                 <hr>
                                 <a href="/" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> Register with Google
@@ -107,7 +107,10 @@ function register() {
         url: "/members",
         contentType : 'application/json',
         data: JSON.stringify(memberObj),
-        success: function(data, textStatus, jqXHR) {
+        success: function(d, t, x) {
+            console.log(d);
+            console.log(t);
+            console.log(x);
             alert("OK");
         }
     });

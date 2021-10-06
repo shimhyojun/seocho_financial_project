@@ -6,8 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 @Controller
 public class MainController {
+
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String dashboard() {
         return "index";
@@ -26,6 +30,8 @@ public class MainController {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("charts");
 
+
+
         return mav;
     }
 
@@ -36,7 +42,9 @@ public class MainController {
     public String login() { return "login"; }
 
     @GetMapping("/register")
-    public String register() { return "register"; }
+    public String register() {
+        return "register";
+    }
 
     @GetMapping("/tables")
     public String tables() { return "tables"; }
