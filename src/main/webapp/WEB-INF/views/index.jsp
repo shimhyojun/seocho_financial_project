@@ -108,26 +108,10 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="/login">Login</a>
-                        <a class="collapse-item" href="/register">Register</a>
+                        <h6 class="collapse-header">User page:</h6>
+                        <!--a class="collapse-item" href="/login">Login</a>
+                        <a class="collapse-item" href="/register">Register</a-->
                         <a class="collapse-item" href="/forgot-password">Forgot Password</a>
-                    </div>
-                </div>
-            </li>
-                <!-- 게시판 페이지 -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#BoardPages"
-                   aria-expanded="true" aria-controls="BoardPages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Board</span>
-                </a>
-                <div id="BoardPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Board:</h6>
-                        <a class="collapse-item" href="/tests"> Customed Test</a>
-                        <a class="collapse-item" href="/question">Q&A</a>
-
                     </div>
                 </div>
             </li>
@@ -165,6 +149,24 @@
                     </div>
                 </div>
             </li>
+
+            <!-- 게시판 페이지 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#BoardPages"
+                   aria-expanded="true" aria-controls="BoardPages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Board</span>
+                </a>
+                <div id="BoardPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Board:</h6>
+                        <a class="collapse-item" href="/tests"> Customed Test</a>
+                        <a class="collapse-item" href="/question">Q&A</a>
+
+                    </div>
+                </div>
+            </li>
+
 
             <!-- Nav Item - Charts -->
             <!--li class="nav-item">
