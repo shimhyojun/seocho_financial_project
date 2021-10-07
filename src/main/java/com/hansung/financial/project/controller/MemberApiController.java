@@ -21,7 +21,7 @@ public class MemberApiController {
         this.membersService = membersService;
     }
 
-    @GetMapping("/memberss")
+    @GetMapping("/members")
     public List<Member> getMembers() {
         return membersService.getMembers();
     }
@@ -40,6 +40,12 @@ public class MemberApiController {
     @DeleteMapping("/members/{id}")
     public void removeMember(@PathVariable(value = "id") int id) {
         membersService.deleteMember(id);
+    }
+
+    @PutMapping("/members/{id}")
+    public int updateMembers(@PathVariable(value = "id") int id, @RequestBody Member member) {
+        member.setId(id);
+        return membersService.updateMember(member);
     }
 
 }

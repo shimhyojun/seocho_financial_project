@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>asset management service</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href= "vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">PortFolio </div>
             </a>
 
             <!-- Divider -->
@@ -45,19 +45,19 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Home</span></a>
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+            <!--hr class="sidebar-divider"-->
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+            <!--div class="sidebar-heading">
                 Interface
-            </div>
+            </div-->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -70,10 +70,10 @@
                         <a class="collapse-item" href="/cards">Cards</a>
                     </div>
                 </div>
-            </li>
+            </li-->
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -89,14 +89,14 @@
                         <a class="collapse-item" href="/utilities-other">Other</a>
                     </div>
                 </div>
-            </li>
+            </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                Menu
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -104,56 +104,83 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages1</span>
+                    <span>My page</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="/login">Login</a>
-                        <a class="collapse-item" href="/register">Register</a>
+                        <h6 class="collapse-header">User page:</h6>
+                        <!--a class="collapse-item" href="/login">Login</a>
+                        <a class="collapse-item" href="/register">Register</a-->
                         <a class="collapse-item" href="/forgot-password">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <!--a class="collapse-item" href="404.html">404 Page</a-->
-             			<a class="collpase-item" href="/tests">Customized Test</a>
+                    </div>
+                </div>
+            </li>
+                <!-- 은행 페이지-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#BankPages"
+                   aria-expanded="true" aria-controls="BankPages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Banks</span>
+                </a>
+                <div id="BankPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Banks:</h6>
+                        <a class="collapse-item" href="/bank-KB">KB</a>
+                        <a class="collapse-item" href="/banks-IBK">IBK</a>
+                        <a class="collapse-item" href="/banks-Woori">Woori</a>
+                        <a class="collapse-item" href="/banks-Shinhan">Shinhan</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
+                <!-- 거래소 페이지-->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages2"
-                   aria-expanded="true" aria-controls="collapsePages">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#MarketPages"
+                   aria-expanded="true" aria-controls="MarketPages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages2</span>
+                    <span>Crypto Markets</span>
                 </a>
-                <div id="collapsePages2" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="MarketPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="/login">Login</a>
-                        <a class="collapse-item" href="/register">Register</a>
-                        <a class="collapse-item" href="/forgot-password">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <!--a class="collapse-item" href="404.html">404 Page</a-->
-                        <a class="collpase-item" href="/tests">Customized Test</a>
+                        <h6 class="collapse-header">Crypto Markets:</h6>
+                        <a class="collapse-item" href="/markets-upbit">UPBIT</a>
+                        <a class="collapse-item" href="/markets-gopax">GOPAX</a>
+                        <a class="collapse-item" href="/markets-binance">Binance</a>
                     </div>
                 </div>
             </li>
+
+            <!-- 게시판 페이지 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#BoardPages"
+                   aria-expanded="true" aria-controls="BoardPages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Board</span>
+                </a>
+                <div id="BoardPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Board:</h6>
+                        <a class="collapse-item" href="/tests"> Customed Test</a>
+                        <a class="collapse-item" href="/question">Q&A</a>
+
+                    </div>
+                </div>
+            </li>
+
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link" href="/charts">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
-            </li>
+            </li-->
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link" href="/tables">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
-            </li>
+            </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -164,11 +191,11 @@
             </div>
 
             <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
+            <!--div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
+            </div-->
 
         </ul>
         <!-- End of Sidebar -->
@@ -188,7 +215,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!--form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -199,7 +226,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form-->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -388,9 +415,9 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">My Page</h1>
+                        <!--a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a-->
                     </div>
 
                     <!-- Content Row -->
@@ -407,7 +434,7 @@
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -433,7 +460,7 @@
                         </div>
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <!--div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -459,7 +486,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div-->
 
                         <!-- Pending Requests Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
@@ -468,8 +495,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                                holding crypto</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">BTC, ETH, BNB</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -492,12 +519,12 @@
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
                                     <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
+                                            aria-labelledby="dropdownMenuLink1">
                                             <div class="dropdown-header">Dropdown Header:</div>
                                             <a class="dropdown-item" href="#">Action</a>
                                             <a class="dropdown-item" href="#">Another action</a>
@@ -521,7 +548,7 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Portfolio</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -544,13 +571,10 @@
                                     </div>
                                     <div class="mt-4 text-center small">
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Direct
+                                            <i class="fas fa-circle text-primary"></i> Deposit
                                         </span>
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral
+                                            <i class="fas fa-circle text-success"></i> Crypto
                                         </span>
                                     </div>
                                 </div>
@@ -565,7 +589,7 @@
                         <div class="col-lg-6 mb-4">
 
                             <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
+                            <!--div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
                                 </div>
@@ -601,10 +625,10 @@
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
 
                             <!-- Color System -->
-                            <div class="row">
+                            <!--div class="row">
                                 <div class="col-lg-6 mb-4">
                                     <div class="card bg-primary text-white shadow">
                                         <div class="card-body">
@@ -673,10 +697,10 @@
 
                         </div>
 
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-6 mb-4"-->
 
                             <!-- Illustrations -->
-                            <div class="card shadow mb-4">
+                            <!--div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
                                 </div>
@@ -692,10 +716,10 @@
                                     <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
                                         unDraw &rarr;</a>
                                 </div>
-                            </div>
+                            </div-->
 
                             <!-- Approach -->
-                            <div class="card shadow mb-4">
+                            <!--div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
                                 </div>
@@ -711,7 +735,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div-->
                 <!-- /.container-fluid -->
 
             </div>
@@ -721,7 +745,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Holding Asset Portfolio 2021</span>
                     </div>
                 </div>
             </footer>
@@ -775,6 +799,9 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
