@@ -117,4 +117,27 @@ public class MainController {
     @GetMapping("/utilities-other")
     public String utilities_other() { return "utilities-other"; }
 
+    @GetMapping("/question")
+    public String question() { return "question"; }
+
+    @GetMapping("/markets-upbit")
+    public String market1() { return "markets-upbit"; }
+
+    @GetMapping("/markets-gopax")
+    public String market2() { return "markets-gopax"; }
+
+    @GetMapping("/markets-binance")
+    public String market3() { return "markets-binance"; }
+
+    @GetMapping("/bank-KB")
+    public String bank1() { return "bank-KB"; }
+
+    @GetMapping("/bank-IBK")
+    public String bank2() { return "bank-IBK"; }
+
+    @GetMapping("/bank-Woo-ri")
+    public String bank3() { return "bank-Woo-ri"; }
+
+    @GetMapping("/bank-Shinhan")
+    public String bank4() { return "bank-Shinhan"; }
 }
