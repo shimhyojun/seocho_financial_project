@@ -32,9 +32,9 @@ public class MemberApiController {
     }
 
     @PostMapping("/members")
-    public ResponseEntity<Member> addMember(@RequestBody Member member) {
+    public Member addMember(@RequestBody Member member) {
         Member insertedMember = membersService.addMember(member);
-        return ResponseEntity.status(HttpStatus.CREATED).body(insertedMember);
+        return insertedMember;
     }
 
     @DeleteMapping("/members/{id}")
