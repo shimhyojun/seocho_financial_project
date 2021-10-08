@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>asset management service</title>
+    <title>Asset management service</title>
 
     <!-- Custom fonts for this template-->
     <link href= "vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -126,9 +126,9 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Banks:</h6>
                         <a class="collapse-item" href="/bank-KB">KB</a>
-                        <a class="collapse-item" href="/banks-IBK">IBK</a>
-                        <a class="collapse-item" href="/banks-Woori">Woori</a>
-                        <a class="collapse-item" href="/banks-Shinhan">Shinhan</a>
+                        <a class="collapse-item" href="/bank-IBK">IBK</a>
+                        <a class="collapse-item" href="/bank-Woori">Woori</a>
+                        <a class="collapse-item" href="/bank-Shinhan">Shinhan</a>
                     </div>
                 </div>
             </li>
@@ -143,9 +143,9 @@
                 <div id="MarketPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Crypto Markets:</h6>
-                        <a class="collapse-item" href="/markets-upbit">UPBIT</a>
-                        <a class="collapse-item" href="/markets-gopax">GOPAX</a>
-                        <a class="collapse-item" href="/markets-binance">Binance</a>
+                        <a class="collapse-item" href="/upbit">UPBIT</a>
+                        <a class="collapse-item" href="/gopax">GOPAX</a>
+                        <a class="collapse-item" href="/binance">Binance</a>
                     </div>
                 </div>
             </li>

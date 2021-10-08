@@ -25,7 +25,7 @@ import java.util.List;
 @Controller
 public class MainController {
 
-
+    /** 메인페이지 */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String dashboard() {
         return "index";
@@ -36,6 +36,7 @@ public class MainController {
         return "index";
     }
 
+    /** 로그인 관련 페이지 */
     @RequestMapping(value = "loginResult.do")
     	public void loginResult(HttpServletRequest  request, HttpServletResponse response, HttpSession session)
     			throws Exception {
@@ -69,6 +70,76 @@ public class MainController {
 
     }
 
+    @GetMapping("/forgot-password")
+    public String forgot_password() { return "forgot-password"; }
+
+    @GetMapping("/login")
+    public String login() { return "login"; }
+
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
+
+    /** 은행 */
+    @GetMapping("/bank-KB")
+    public String bank_KB() { return "bank-KB"; }
+
+    @GetMapping("/bank-IBK")
+    public String bank_IBK() { return "bank-IBK"; }
+
+    @GetMapping("/bank-Woori")
+    public String bank_Woori() { return "bank-Woori"; }
+
+    @GetMapping("/bank-Shinhan")
+    public String bank_Shinhan() { return "bank-Shinhan"; }
+
+
+
+    /** 암호화폐 거래소 페이지 */
+    @GetMapping("/upbit")
+    public String upbit() { return "upbit"; }
+
+    @GetMapping("/gopax")
+    public String gopax() { return "gopax"; }
+
+    @GetMapping("/binance")
+    public String binance() { return "binance"; }
+
+
+
+    /** 게시판 페이지 */
+    @GetMapping("/tests")
+    public String tests() { return "tests"; }
+
+    @GetMapping("/question")
+    public String question() { return "question"; }
+
+
+
+
+
+
+    /** 기타 */
+    @GetMapping("/utilities-animation")
+    public String utilities_animation() { return "utilities-animation"; }
+
+    @GetMapping("/utilities-border")
+    public String utilities_border() { return "utilities-border"; }
+
+    @GetMapping("/utilities-color")
+    public String utilities_color() { return "utilities-color"; }
+
+    @GetMapping("/utilities-other")
+    public String utilities_other() { return "utilities-other"; }
+
+
+    @GetMapping("/tables")
+    public String tables() { return "tables"; }
+
+    @GetMapping("/blank")
+    public String blank() { return "blank"; }
+
     @GetMapping("/buttons")
     public String test() {
         return "buttons";
@@ -87,62 +158,4 @@ public class MainController {
         return mav;
     }
 
-    @GetMapping("/forgot-password")
-    public String forgot_password() { return "forgot-password"; }
-
-    @GetMapping("/login")
-    public String login() { return "login"; }
-
-    @GetMapping("/register")
-    public String register() {
-        return "register";
-    }
-
-    @GetMapping("/tables")
-    public String tables() { return "tables"; }
-
-    @GetMapping("/blank")
-    public String blank() { return "blank"; }
-
-    @GetMapping("/tests")
-    public String tests() { return "tests"; }
-
-    @GetMapping("/notice")
-    public String notice() { return "notice"; }
-
-    @GetMapping("/utilities-animation")
-    public String utilities_animation() { return "utilities-animation"; }
-
-    @GetMapping("/utilities-border")
-    public String utilities_border() { return "utilities-border"; }
-
-    @GetMapping("/utilities-color")
-    public String utilities_color() { return "utilities-color"; }
-
-    @GetMapping("/utilities-other")
-    public String utilities_other() { return "utilities-other"; }
-
-    @GetMapping("/question")
-    public String question() { return "question"; }
-
-    @GetMapping("/markets-upbit")
-    public String market1() { return "markets-upbit"; }
-
-    @GetMapping("/markets-gopax")
-    public String market2() { return "markets-gopax"; }
-
-    @GetMapping("/markets-binance")
-    public String market3() { return "markets-binance"; }
-
-    @GetMapping("/bank-KB")
-    public String bank1() { return "bank-KB"; }
-
-    @GetMapping("/bank-IBK")
-    public String bank2() { return "bank-IBK"; }
-
-    @GetMapping("/bank-Woo-ri")
-    public String bank3() { return "bank-Woo-ri"; }
-
-    @GetMapping("/bank-Shinhan")
-    public String bank4() { return "bank-Shinhan"; }
 }
