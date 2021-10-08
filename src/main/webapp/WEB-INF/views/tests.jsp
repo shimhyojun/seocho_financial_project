@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Test</title>
+    <title>Asset management service - Test</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Portfolio</div>
             </a>
 
             <!-- Divider -->
@@ -45,19 +45,19 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Home</span></a>
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+            <!--hr class="sidebar-divider"-->
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+            <!--div class="sidebar-heading">
                 Interface
-            </div>
+            </div-->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -70,10 +70,10 @@
                         <a class="collapse-item" href="/cards">Cards</a>
                     </div>
                 </div>
-            </li>
+            </li-->
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -89,52 +89,97 @@
                         <a class="collapse-item" href="/utilities-other">Other</a>
                     </div>
                 </div>
-            </li>
+            </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                Menu
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                   aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <span>My page</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="/login">Login</a>
-                        <a class="collapse-item" href="/register">Register</a>
+                        <h6 class="collapse-header">User page:</h6>
+                        <!--a class="collapse-item" href="/login">Login</a>
+                        <a class="collapse-item" href="/register">Register</a-->
                         <a class="collapse-item" href="/forgot-password">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <!--a class="collapse-item" href="404.html">404 Page</a-->
-                        <a class="collapse-item active" href="/blank">Blank Page</a>
-                        <a class="collpase-item active" href="/tests">Customized Test</a>
+                    </div>
+                </div>
+            </li>
+            <!-- 은행 페이지-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#BankPages"
+                   aria-expanded="true" aria-controls="BankPages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Banks</span>
+                </a>
+                <div id="BankPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Banks:</h6>
+                        <a class="collapse-item" href="/bank-KB">KB</a>
+                        <a class="collapse-item" href="/banks-IBK">IBK</a>
+                        <a class="collapse-item" href="/banks-Woori">Woori</a>
+                        <a class="collapse-item" href="/banks-Shinhan">Shinhan</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 거래소 페이지-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#MarketPages"
+                   aria-expanded="true" aria-controls="MarketPages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Crypto Markets</span>
+                </a>
+                <div id="MarketPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Crypto Markets:</h6>
+                        <a class="collapse-item" href="/markets-upbit">UPBIT</a>
+                        <a class="collapse-item" href="/markets-gopax">GOPAX</a>
+                        <a class="collapse-item" href="/markets-binance">Binance</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 게시판 페이지 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#BoardPages"
+                   aria-expanded="true" aria-controls="BoardPages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Board</span>
+                </a>
+                <div id="BoardPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Board:</h6>
+                        <a class="collapse-item" href="/tests"> Customed Test</a>
+                        <a class="collapse-item" href="/question">Q&A</a>
+
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link" href="/charts">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
-            </li>
+            </li-->
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <a class="nav-link" href="/tables">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
-            </li>
+            </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
